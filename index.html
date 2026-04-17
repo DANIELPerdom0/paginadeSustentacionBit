@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="shortcut icon" href="img/burritologo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Burritos El Papi</title>
+  </head>
+  <body>
+    <section id="inicio">
+      <header>
+        <div class="contenido-header">
+          <div class="logo">
+            <h1>Burritos El Papi</h1>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li>
+                <a href="#inicio"
+                  ><i class="fa-solid fa-house"></i><span>Inicio</span></a
+                >
+              </li>
+              <li>
+                <a href="#sabores"
+                  ><i class="fa-solid fa-handshake"></i
+                  ><span>Quienes somos</span></a
+                >
+              </li>
+              <li>
+                <a href="#platos"
+                  ><i class="fa-solid fa-pepper-hot"></i
+                  ><span>Nuestros Burritos</span></a
+                >
+              </li>
+              <li>
+                <a href="#contacto"
+                  ><i class="fa-solid fa-mobile-button"></i
+                  ><span>Contacto</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="carrusel">
+        <div
+          class="main-gallery js-flickity"
+          data-flickity='{ "wrapAround": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "pauseAutoPlayOnHover": false }'
+        >
+          <div class="gallery-cell">
+            <img src="img/burritobarbacoa.jpg" alt="Burrito 1" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/burritoFrijol.jpg" alt="Plato 2" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/burritoPollo.jpeg" alt="Jugos" />
+          </div>
+          <div class="gallery-cell">
+            <img src="img/burritoAtun.jpg" alt="Empanadas" />
+          </div>
+        </div>
+        <div class="info">
+          <h2>Deliciosos Burritos</h2>
+          <p class="eslogan">Hechos con amor y los mejores ingredientes</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html>
