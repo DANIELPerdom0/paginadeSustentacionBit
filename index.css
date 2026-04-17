@@ -7,10 +7,13 @@
   font-family: "Quicksand", sans-serif;
 }
 
-body,
 html {
-  height: 100vh;
-  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fff;
 }
 
 #inicio {
@@ -24,8 +27,10 @@ header {
   background: #d99d59;
   display: flex;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
 }
 
 .contenido-header {
@@ -69,19 +74,6 @@ nav ul li a:hover {
   color: #0e0e0e;
 }
 
-.social a {
-  background-color: #37c437;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 18px;
-  border-radius: 25px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Contenedor del Carrusel */
 .carrusel {
   flex: 1;
   position: relative;
@@ -89,7 +81,6 @@ nav ul li a:hover {
   background: #000;
 }
 
-/* Forzar altura de Flickity al 100% del contenedor padre */
 .main-gallery,
 .flickity-viewport {
   height: 100% !important;
@@ -107,7 +98,6 @@ nav ul li a:hover {
   filter: brightness(50%);
 }
 
-/* Texto sobre el carrusel */
 .info {
   position: absolute;
   top: 50%;
@@ -117,7 +107,6 @@ nav ul li a:hover {
   color: #fff;
   z-index: 5;
   width: 80%;
-  pointer-events: none;
 }
 
 .info h2 {
@@ -129,4 +118,31 @@ nav ul li a:hover {
 .eslogan {
   font-size: clamp(18px, 4vw, 35px);
   font-weight: 300;
+}
+
+#quienes-somos {
+  background-color: #a27541;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  color: white;
+  gap: 40px;
+}
+
+.wrapperimg img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.texto-nosotros {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
 }
