@@ -218,3 +218,59 @@ nav ul li a:hover {
 .ordenarbtn:hover {
   background-color: #10b981;
 }
+
+#contacto {
+  padding: 80px 6%;
+  background-color: #a27541;
+  text-align: center;
+}
+
+#contacto h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.contenedor-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid white;
+}
+
+.formulario-contacto {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: #fef3c7;
+  font-size: 16px;
+  color: #333;
+}
+
+.formulario-contacto textarea {
+  height: 150px;
+  resize: none;
+}
