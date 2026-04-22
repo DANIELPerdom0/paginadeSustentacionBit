@@ -167,35 +167,54 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
+  align-items: stretch;
 }
+
 .burrito-card {
   background: rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
 .burrito-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
+
 .burrito-card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 16px;
   margin-bottom: 20px;
 }
+
 .burrito-card h3 {
   color: #fef3c7;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .burrito-card p {
   color: #fff;
   margin-bottom: 20px;
   font-size: 15px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ordenarbtn {
-  background-color: #84cc16;
+  background-color: #ef8b09;
   color: white;
   border: none;
   padding: 10px 25px;
@@ -203,9 +222,12 @@ nav ul li a:hover {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: auto;
+  align-self: center;
 }
+
 .ordenarbtn:hover {
-  background-color: #10b981;
+  background-color: #c29a17;
 }
 
 #contacto {
